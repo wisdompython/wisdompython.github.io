@@ -12,9 +12,9 @@ body{
     width: 640px;
     height: 400px;
     position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
+    margin:auto;
+    left: 20%;
+    right: 50%;
     top: 0;
     bottom: 0;
     -webkit-perspective: 1200px;
@@ -65,7 +65,7 @@ body{
     
 }
 .front{
-    background-color: white;
+    background-color: rgb(110, 180, 197);
 }
 .back{
     transform: rotateY(180deg);
@@ -139,6 +139,27 @@ body{
     color: #0d1136;
 }
 .inside h1{
-    font-size:120px;
+    font-size:100px;
     line-height: 120px;
+}
+
+.inside p {
+    font-size: small;
+}
+.inside a{
+    width: 100%;
+    font-weight: 500;
+    color:rgb(35, 65, 161);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    position:absolute;
+    transition: 0.5s;
+}
+.inside:hover a{
+    background: rgba(94, 183, 243, 0.2);
+    bottom:9%;
+    opacity:1;
 }
